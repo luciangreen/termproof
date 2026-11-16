@@ -37,4 +37,4 @@ theorem(known_certificates) :- certify(len, decreases(1)), certify(app, decrease
 
 % 4. A certificate names an argument that really shrinks: in every recursive call it is a proper part of the head's, or N - 1 of N > 0.
 theorem(certificates_are_checkable) :-
-    forall(( pred(P, Cs), certify(P, decreases(I)), member(C, Cs), copy_term(C, C2), C2 = (H :- _), functor(H, F, A), recursive_calls(C2, F/A, H-Calls), member(Call-Before, Calls) ), decreases(H, Call, Before, I)).
+    forall(( pred(P, Cs), certify(P, decreases(I)), member(C, Cs), C = (H0 :- _), functor(H0, F, A), recursive_calls(C, F/A, Calls), member(H-Call-Before, Calls) ), decreases(H, Call, Before, I)).

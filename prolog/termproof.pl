@@ -20,8 +20,9 @@ pred(loop, [ (loop(X) :- loop(X)) ]).
 pred(grow, [ (grow(X) :- grow([X])) ]).
 pred(swap_args, [ (sw([], _) :- true), (sw([_|T], L) :- sw(L, T)) ]).   % shrinks in neither argument on every call
 
-% recursive_calls(+Clause, +Functor/Arity, -Calls): the head and its recursive calls (with guards seen before them).
-recursive_calls((H :- B), F/A, H-Calls) :- body_list(B, Gs), findall(C-Before, ( append(Before, [C|_], Gs), functor(C, F, A) ), Calls).
+% recursive_calls(+Clause, +Functor/Arity, -Calls): each recursive call as Head-Call-Before (the guards seen
+% before it), all three in one copy, so the call's variables are still the head's.
+recursive_calls((H :- B), F/A, Calls) :- body_list(B, Gs), findall(H-C-Before, ( append(Before, [C|_], Gs), functor(C, F, A) ), Calls).
 body_list((A, B), L) :- !, body_list(A, La), body_list(B, Lb), append(La, Lb, L).
 body_list(true, []) :- !.
 body_list(G, [G]).
@@ -33,7 +34,7 @@ nat_step(X, Y, Before) :- var(X), member(G, Before), G = (Y0 is E), Y0 == Y, E =
 
 % certify(+Pred, -Certificate): decreases(I) for the first argument that shrinks in every recursive call, or none.
 certify(P, C) :- pred(P, Cs), Cs = [C0|_], copy_term(C0, (H0 :- _)), functor(H0, F, A),
-    (   between(1, A, I), forall(( member(Cl, Cs), copy_term(Cl, Cl2), recursive_calls(Cl2, F/A, H-Calls), member(Call-Before, Calls) ), decreases(H, Call, Before, I))
+    (   between(1, A, I), forall(( member(Cl, Cs), recursive_calls(Cl, F/A, Calls), member(H-Call-Before, Calls) ), decreases(H, Call, Before, I))
     ->  C = decreases(I)
     ;   C = none ).
 
