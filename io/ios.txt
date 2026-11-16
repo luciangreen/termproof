@@ -1,0 +1,402 @@
+termproof: 200 inputs and outputs, from real runs (io/ios.pl has the same as Prolog facts).
+
+1. certify(grow)
+   => none
+2. run_len(len([a,a,a,a,a,a],_466), 1)
+   => out_of_depth
+3. run_countdown(countdown(5,_538), 12)
+   => finished
+4. run_loop(29)
+   => out_of_depth
+5. certify(loop)
+   => none
+6. run_len(len([a,a,a,a,a,a],_616), 9)
+   => finished
+7. run_countdown(countdown(9,_686), 7)
+   => out_of_depth
+8. run_loop(7)
+   => out_of_depth
+9. certify(grow)
+   => none
+10. run_len(len([a,a,a,a,a,a],_764), 6)
+   => out_of_depth
+11. run_countdown(countdown(3,_834), 6)
+   => finished
+12. run_loop(30)
+   => out_of_depth
+13. certify(len)
+   => decreases(1)
+14. run_len(len([a,a,a,a],_916), 9)
+   => finished
+15. run_countdown(countdown(0,_974), 12)
+   => finished
+16. run_loop(8)
+   => out_of_depth
+17. certify(grow)
+   => none
+18. run_len(len([a,a,a,a],_1052), 7)
+   => finished
+19. run_countdown(countdown(5,_1110), 11)
+   => finished
+20. run_loop(11)
+   => out_of_depth
+21. certify(tree_size)
+   => decreases(1)
+22. run_len(len([a],_1192), 9)
+   => finished
+23. run_countdown(countdown(6,_1232), 9)
+   => finished
+24. run_loop(7)
+   => out_of_depth
+25. certify(grow)
+   => none
+26. run_len(len([a,a,a,a,a],_1310), 5)
+   => out_of_depth
+27. run_countdown(countdown(5,_1374), 6)
+   => finished
+28. run_loop(4)
+   => out_of_depth
+29. certify(len)
+   => decreases(1)
+30. run_len(len([a,a],_1456), 10)
+   => finished
+31. run_countdown(countdown(2,_1502), 12)
+   => finished
+32. run_loop(15)
+   => out_of_depth
+33. certify(len)
+   => decreases(1)
+34. run_len(len([a,a],_1584), 12)
+   => finished
+35. run_countdown(countdown(6,_1630), 9)
+   => finished
+36. run_loop(5)
+   => out_of_depth
+37. certify(tree_size)
+   => decreases(1)
+38. run_len(len([a],_1712), 11)
+   => finished
+39. run_countdown(countdown(8,_1752), 3)
+   => out_of_depth
+40. run_loop(7)
+   => out_of_depth
+41. certify(app)
+   => decreases(1)
+42. run_len(len([a,a],_1834), 11)
+   => finished
+43. run_countdown(countdown(5,_1880), 10)
+   => finished
+44. run_loop(23)
+   => out_of_depth
+45. certify(tree_size)
+   => decreases(1)
+46. run_len(len([],_1962), 10)
+   => finished
+47. run_countdown(countdown(6,_1996), 7)
+   => finished
+48. run_loop(18)
+   => out_of_depth
+49. certify(grow)
+   => none
+50. run_len(len([a,a,a],_2074), 11)
+   => finished
+51. run_countdown(countdown(2,_2126), 2)
+   => out_of_depth
+52. run_loop(5)
+   => out_of_depth
+53. certify(tree_size)
+   => decreases(1)
+54. run_len(len([a],_2208), 1)
+   => out_of_depth
+55. run_countdown(countdown(7,_2248), 8)
+   => finished
+56. run_loop(28)
+   => out_of_depth
+57. certify(swap_args)
+   => none
+58. run_len(len([a,a,a],_2326), 4)
+   => finished
+59. run_countdown(countdown(5,_2378), 12)
+   => finished
+60. run_loop(13)
+   => out_of_depth
+61. certify(swap_args)
+   => none
+62. run_len(len([a,a,a],_2456), 5)
+   => finished
+63. run_countdown(countdown(4,_2508), 10)
+   => finished
+64. run_loop(15)
+   => out_of_depth
+65. certify(loop)
+   => none
+66. run_len(len([a,a,a,a,a,a,a],_2586), 10)
+   => finished
+67. run_countdown(countdown(9,_2662), 2)
+   => out_of_depth
+68. run_loop(11)
+   => out_of_depth
+69. certify(len)
+   => decreases(1)
+70. run_len(len([a,a],_2744), 1)
+   => out_of_depth
+71. run_countdown(countdown(9,_2790), 4)
+   => out_of_depth
+72. run_loop(6)
+   => out_of_depth
+73. certify(len)
+   => decreases(1)
+74. run_len(len([a,a,a],_2872), 1)
+   => out_of_depth
+75. run_countdown(countdown(8,_2924), 2)
+   => out_of_depth
+76. run_loop(2)
+   => out_of_depth
+77. certify(app)
+   => decreases(1)
+78. run_len(len([a,a,a,a,a],_3006), 8)
+   => finished
+79. run_countdown(countdown(0,_3070), 7)
+   => finished
+80. run_loop(7)
+   => out_of_depth
+81. certify(tree_size)
+   => decreases(1)
+82. run_len(len([a,a,a,a,a,a,a],_3152), 8)
+   => finished
+83. run_countdown(countdown(2,_3228), 9)
+   => finished
+84. run_loop(19)
+   => out_of_depth
+85. certify(countdown)
+   => decreases(1)
+86. run_len(len([a,a,a,a,a,a],_3310), 5)
+   => out_of_depth
+87. run_countdown(countdown(2,_3380), 11)
+   => finished
+88. run_loop(13)
+   => out_of_depth
+89. certify(len)
+   => decreases(1)
+90. run_len(len([a,a,a,a,a,a],_3462), 4)
+   => out_of_depth
+91. run_countdown(countdown(7,_3532), 10)
+   => finished
+92. run_loop(22)
+   => out_of_depth
+93. certify(grow)
+   => none
+94. run_len(len([a],_3610), 9)
+   => finished
+95. run_countdown(countdown(0,_3650), 11)
+   => finished
+96. run_loop(3)
+   => out_of_depth
+97. certify(app)
+   => decreases(1)
+98. run_len(len([a,a,a,a,a],_3732), 5)
+   => out_of_depth
+99. run_countdown(countdown(1,_3796), 11)
+   => finished
+100. run_loop(6)
+   => out_of_depth
+101. certify(app)
+   => decreases(1)
+102. run_len(len([a],_3878), 11)
+   => finished
+103. run_countdown(countdown(4,_3918), 12)
+   => finished
+104. run_loop(25)
+   => out_of_depth
+105. certify(swap_args)
+   => none
+106. run_len(len([a,a,a,a,a,a,a],_3996), 2)
+   => out_of_depth
+107. run_countdown(countdown(4,_4072), 2)
+   => out_of_depth
+108. run_loop(19)
+   => out_of_depth
+109. certify(tree_size)
+   => decreases(1)
+110. run_len(len([a,a,a],_4154), 1)
+   => out_of_depth
+111. run_countdown(countdown(7,_4206), 10)
+   => finished
+112. run_loop(15)
+   => out_of_depth
+113. certify(countdown)
+   => decreases(1)
+114. run_len(len([],_4288), 5)
+   => finished
+115. run_countdown(countdown(5,_4322), 12)
+   => finished
+116. run_loop(15)
+   => out_of_depth
+117. certify(tree_size)
+   => decreases(1)
+118. run_len(len([a],_4404), 9)
+   => finished
+119. run_countdown(countdown(3,_4444), 9)
+   => finished
+120. run_loop(25)
+   => out_of_depth
+121. certify(tree_size)
+   => decreases(1)
+122. run_len(len([],_4526), 8)
+   => finished
+123. run_countdown(countdown(4,_4560), 9)
+   => finished
+124. run_loop(9)
+   => out_of_depth
+125. certify(len)
+   => decreases(1)
+126. run_len(len([],_4642), 4)
+   => finished
+127. run_countdown(countdown(2,_4676), 9)
+   => finished
+128. run_loop(20)
+   => out_of_depth
+129. certify(swap_args)
+   => none
+130. run_len(len([a,a,a,a,a],_4754), 3)
+   => out_of_depth
+131. run_countdown(countdown(6,_4818), 12)
+   => finished
+132. run_loop(2)
+   => out_of_depth
+133. certify(len)
+   => decreases(1)
+134. run_len(len([a,a,a],_4900), 1)
+   => out_of_depth
+135. run_countdown(countdown(9,_4952), 5)
+   => out_of_depth
+136. run_loop(23)
+   => out_of_depth
+137. certify(tree_size)
+   => decreases(1)
+138. run_len(len([a,a,a,a,a,a,a],_5034), 8)
+   => finished
+139. run_countdown(countdown(8,_5110), 2)
+   => out_of_depth
+140. run_loop(20)
+   => out_of_depth
+141. certify(tree_size)
+   => decreases(1)
+142. run_len(len([a,a,a,a,a,a],_5192), 6)
+   => out_of_depth
+143. run_countdown(countdown(7,_5262), 10)
+   => finished
+144. run_loop(13)
+   => out_of_depth
+145. certify(grow)
+   => none
+146. run_len(len([],_5340), 1)
+   => finished
+147. run_countdown(countdown(2,_5374), 7)
+   => finished
+148. run_loop(7)
+   => out_of_depth
+149. certify(len)
+   => decreases(1)
+150. run_len(len([a],_5944), 9)
+   => finished
+151. run_countdown(countdown(6,_6362), 12)
+   => finished
+152. run_loop(12)
+   => out_of_depth
+153. certify(grow)
+   => none
+154. run_len(len([a],_7350), 7)
+   => finished
+155. run_countdown(countdown(4,_7768), 11)
+   => finished
+156. run_loop(15)
+   => out_of_depth
+157. certify(loop)
+   => none
+158. run_len(len([a,a],_8744), 3)
+   => finished
+159. run_countdown(countdown(6,_9168), 6)
+   => out_of_depth
+160. run_loop(16)
+   => out_of_depth
+161. certify(countdown)
+   => decreases(1)
+162. run_len(len([a,a,a,a,a,a,a],_10254), 10)
+   => finished
+163. run_countdown(countdown(7,_10708), 9)
+   => finished
+164. run_loop(20)
+   => out_of_depth
+165. certify(app)
+   => decreases(1)
+166. run_len(len([a,a,a,a,a,a,a],_11802), 3)
+   => out_of_depth
+167. run_countdown(countdown(1,_12244), 1)
+   => out_of_depth
+168. run_loop(20)
+   => out_of_depth
+169. certify(swap_args)
+   => none
+170. run_len(len([a,a,a,a,a,a],_13234), 1)
+   => out_of_depth
+171. run_countdown(countdown(7,_13670), 2)
+   => out_of_depth
+172. run_loop(10)
+   => out_of_depth
+173. certify(tree_size)
+   => decreases(1)
+174. run_len(len([a,a,a,a,a,a],_14762), 7)
+   => finished
+175. run_countdown(countdown(9,_15210), 2)
+   => out_of_depth
+176. run_loop(22)
+   => out_of_depth
+177. certify(grow)
+   => none
+178. run_len(len([a,a,a,a,a],_16186), 10)
+   => finished
+179. run_countdown(countdown(5,_16628), 10)
+   => finished
+180. run_loop(16)
+   => out_of_depth
+181. certify(swap_args)
+   => none
+182. run_len(len([a],_17630), 5)
+   => finished
+183. run_countdown(countdown(8,_18048), 6)
+   => out_of_depth
+184. run_loop(5)
+   => out_of_depth
+185. certify(tree_size)
+   => decreases(1)
+186. run_len(len([a],_19140), 11)
+   => finished
+187. run_countdown(countdown(4,_19558), 5)
+   => finished
+188. run_loop(16)
+   => out_of_depth
+189. certify(swap_args)
+   => none
+190. run_len(len([a,a,a,a,a,a],_20560), 6)
+   => out_of_depth
+191. run_countdown(countdown(7,_20996), 8)
+   => finished
+192. run_loop(14)
+   => out_of_depth
+193. certify(tree_size)
+   => decreases(1)
+194. run_len(len([a,a,a],_22100), 8)
+   => finished
+195. run_countdown(countdown(9,_22530), 2)
+   => out_of_depth
+196. run_loop(24)
+   => out_of_depth
+197. certify(tree_size)
+   => decreases(1)
+198. run_len(len([a,a,a,a,a,a,a,a],_23622), 9)
+   => finished
+199. run_countdown(countdown(2,_24082), 2)
+   => out_of_depth
+200. run_loop(9)
+   => out_of_depth
