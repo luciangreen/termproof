@@ -55,11 +55,11 @@ io(53, certify, [tree_size], decreases(1)).
 io(54, run_len, [len([a], _2208), 1], out_of_depth).
 io(55, run_countdown, [countdown(7, _2248), 8], finished).
 io(56, run_loop, [28], out_of_depth).
-io(57, certify, [swap_args], none).
+io(57, certify, [swap_args], decreases_sum([1, 2])).
 io(58, run_len, [len([a, a, a], _2326), 4], finished).
 io(59, run_countdown, [countdown(5, _2378), 12], finished).
 io(60, run_loop, [13], out_of_depth).
-io(61, certify, [swap_args], none).
+io(61, certify, [swap_args], decreases_sum([1, 2])).
 io(62, run_len, [len([a, a, a], _2456), 5], finished).
 io(63, run_countdown, [countdown(4, _2508), 10], finished).
 io(64, run_loop, [15], out_of_depth).
@@ -103,7 +103,7 @@ io(101, certify, [app], decreases(1)).
 io(102, run_len, [len([a], _3878), 11], finished).
 io(103, run_countdown, [countdown(4, _3918), 12], finished).
 io(104, run_loop, [25], out_of_depth).
-io(105, certify, [swap_args], none).
+io(105, certify, [swap_args], decreases_sum([1, 2])).
 io(106, run_len, [len([a, a, a, a, a, a, a], _3996), 2], out_of_depth).
 io(107, run_countdown, [countdown(4, _4072), 2], out_of_depth).
 io(108, run_loop, [19], out_of_depth).
@@ -127,7 +127,7 @@ io(125, certify, [len], decreases(1)).
 io(126, run_len, [len([], _4642), 4], finished).
 io(127, run_countdown, [countdown(2, _4676), 9], finished).
 io(128, run_loop, [20], out_of_depth).
-io(129, certify, [swap_args], none).
+io(129, certify, [swap_args], decreases_sum([1, 2])).
 io(130, run_len, [len([a, a, a, a, a], _4754), 3], out_of_depth).
 io(131, run_countdown, [countdown(6, _4818), 12], finished).
 io(132, run_loop, [2], out_of_depth).
@@ -167,7 +167,7 @@ io(165, certify, [app], decreases(1)).
 io(166, run_len, [len([a, a, a, a, a, a, a], _11802), 3], out_of_depth).
 io(167, run_countdown, [countdown(1, _12244), 1], out_of_depth).
 io(168, run_loop, [20], out_of_depth).
-io(169, certify, [swap_args], none).
+io(169, certify, [swap_args], decreases_sum([1, 2])).
 io(170, run_len, [len([a, a, a, a, a, a], _13234), 1], out_of_depth).
 io(171, run_countdown, [countdown(7, _13670), 2], out_of_depth).
 io(172, run_loop, [10], out_of_depth).
@@ -179,7 +179,7 @@ io(177, certify, [grow], none).
 io(178, run_len, [len([a, a, a, a, a], _16186), 10], finished).
 io(179, run_countdown, [countdown(5, _16628), 10], finished).
 io(180, run_loop, [16], out_of_depth).
-io(181, certify, [swap_args], none).
+io(181, certify, [swap_args], decreases_sum([1, 2])).
 io(182, run_len, [len([a], _17630), 5], finished).
 io(183, run_countdown, [countdown(8, _18048), 6], out_of_depth).
 io(184, run_loop, [5], out_of_depth).
@@ -187,7 +187,7 @@ io(185, certify, [tree_size], decreases(1)).
 io(186, run_len, [len([a], _19140), 11], finished).
 io(187, run_countdown, [countdown(4, _19558), 5], finished).
 io(188, run_loop, [16], out_of_depth).
-io(189, certify, [swap_args], none).
+io(189, certify, [swap_args], decreases_sum([1, 2])).
 io(190, run_len, [len([a, a, a, a, a, a], _20560), 6], out_of_depth).
 io(191, run_countdown, [countdown(7, _20996), 8], finished).
 io(192, run_loop, [14], out_of_depth).

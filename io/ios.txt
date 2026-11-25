@@ -113,7 +113,7 @@ termproof: 200 inputs and outputs, from real runs (io/ios.pl has the same as Pro
 56. run_loop(28)
    => out_of_depth
 57. certify(swap_args)
-   => none
+   => decreases_sum([1,2])
 58. run_len(len([a,a,a],_2326), 4)
    => finished
 59. run_countdown(countdown(5,_2378), 12)
@@ -121,7 +121,7 @@ termproof: 200 inputs and outputs, from real runs (io/ios.pl has the same as Pro
 60. run_loop(13)
    => out_of_depth
 61. certify(swap_args)
-   => none
+   => decreases_sum([1,2])
 62. run_len(len([a,a,a],_2456), 5)
    => finished
 63. run_countdown(countdown(4,_2508), 10)
@@ -209,7 +209,7 @@ termproof: 200 inputs and outputs, from real runs (io/ios.pl has the same as Pro
 104. run_loop(25)
    => out_of_depth
 105. certify(swap_args)
-   => none
+   => decreases_sum([1,2])
 106. run_len(len([a,a,a,a,a,a,a],_3996), 2)
    => out_of_depth
 107. run_countdown(countdown(4,_4072), 2)
@@ -257,7 +257,7 @@ termproof: 200 inputs and outputs, from real runs (io/ios.pl has the same as Pro
 128. run_loop(20)
    => out_of_depth
 129. certify(swap_args)
-   => none
+   => decreases_sum([1,2])
 130. run_len(len([a,a,a,a,a],_4754), 3)
    => out_of_depth
 131. run_countdown(countdown(6,_4818), 12)
@@ -337,7 +337,7 @@ termproof: 200 inputs and outputs, from real runs (io/ios.pl has the same as Pro
 168. run_loop(20)
    => out_of_depth
 169. certify(swap_args)
-   => none
+   => decreases_sum([1,2])
 170. run_len(len([a,a,a,a,a,a],_13234), 1)
    => out_of_depth
 171. run_countdown(countdown(7,_13670), 2)
@@ -361,7 +361,7 @@ termproof: 200 inputs and outputs, from real runs (io/ios.pl has the same as Pro
 180. run_loop(16)
    => out_of_depth
 181. certify(swap_args)
-   => none
+   => decreases_sum([1,2])
 182. run_len(len([a],_17630), 5)
    => finished
 183. run_countdown(countdown(8,_18048), 6)
@@ -377,7 +377,7 @@ termproof: 200 inputs and outputs, from real runs (io/ios.pl has the same as Pro
 188. run_loop(16)
    => out_of_depth
 189. certify(swap_args)
-   => none
+   => decreases_sum([1,2])
 190. run_len(len([a,a,a,a,a,a],_20560), 6)
    => out_of_depth
 191. run_countdown(countdown(7,_20996), 8)
